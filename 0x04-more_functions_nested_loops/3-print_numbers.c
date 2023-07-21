@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * _numbers - function that prints numbers
- * @0
- * @9
- * Return: 0
+ * main - check the code
+ *
+ * Return: Always  0
  */
 
 void print_numbers(void)
