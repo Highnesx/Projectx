@@ -3,7 +3,7 @@
 int actual_prime(int n, int i);
 
 /**
- * _prime_number - function that returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number - returns 1 if the input integer is a prime number
  * @n: paramter one
  * Return: int
  */
@@ -12,7 +12,7 @@ int is_prime_number(int n)
 
 	if (n <= 1)
 		return (0);
-	return (actual_prime(n, n -1));
+	return (actual_prime(n, n - 1));
 }
 
 /**
