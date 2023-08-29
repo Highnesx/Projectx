@@ -1,6 +1,4 @@
 #include "lists.h"
-
-
 /**
  * delete_nodeint_at_index -Fxn that deletes a node at a certain indexes
  * @head: first element pointer in the list
@@ -28,9 +26,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		while (count < index - 1)
 		{
 		if (!tempNode || !(tempNode->next))
+		{
 			return (-1);
 			tempNode = tempNode->next;
 			count++;
+		
+		}
 		}
 		currentNode = tempNode->next;
 		tempNode->next = currentNode->next;
